@@ -37,7 +37,7 @@ namespace myFluent
 
             //создание класса Билдер (4)
             ConfigBuilder builder = new ConfigBuilder();
-            builder = builder.WithFoo(builder,"foo").WithSub(builder,"subfoo","subbar");
+            builder = builder.WithFoo(builder,"foo-builder").WithSub(builder,"sub-foo-builder","sub-bar-builder");
             var bconfig = builder.Build(builder);
             var bfoo = new Foo(bconfig);
 
